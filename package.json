@@ -1,11 +1,10 @@
 {
-  "name": "docs-vanilla-theme",
+  "name": "vanilla-docs-theme",
   "version": "1.3.0",
-  "description": "The Vanilla theme for documentation, style guides and APIs",
+  "description": "The Vanilla framework theme for documentation, style guides and APIs",
   "author": {
-    "name": "Anthony Dillon",
-    "email": "anthony.dillon@canonical.com",
-    "url": ""
+    "name": "Canonical Web Team",
+    "email": "webteam@canonical.com"
   },
   "contributors": [
     {
@@ -13,19 +12,24 @@
       "email": "anthony.dillon@canonical.com"
     },
     {
-      "name": "Richard McCartney",
-      "email": "richard.mccartney@canonical.com"
+      "name": "Barry McGee",
+      "email": "barry.mcgee@canonical.com"
+    },
+    {
+      "name": "Robin Winslow",
+      "email": "robin.winslow@canonical.com"
     }
   ],
   "keywords": [
     "vanilla",
     "framework",
+    "theme",
     "docs",
     "style guide",
     "APIs"
   ],
   "bugs": {
-    "url" : "http://github.com/ubuntudesign/docs-vanilla-theme/issues",
+    "url" : "http://github.com/ubuntudesign/vanilla-docs-theme/issues",
     "email": "webteam@canonical.com"
   },
   "license" : "LGPL-3.0",
@@ -34,7 +38,7 @@
   },
   "repository": {
   "type" : "git",
-  "url" : "https://github.com/ubuntudesign/docs-vanilla-theme"
+  "url" : "https://github.com/ubuntudesign/vanilla-docs-theme"
   },
   "devDependencies": {
     "gulp": "3.9",
