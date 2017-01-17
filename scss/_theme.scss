@@ -30,7 +30,7 @@
 @import 'patterns_toc';
 @import 'patterns_versions';
 
-@mixin docs-vanilla-theme {
+@mixin vanilla-docs-theme {
   // Vanilla base styles
   @include vf-b-reset;
   @include vf-b-blockquotes;
