@@ -29,7 +29,7 @@
     "APIs"
   ],
   "bugs": {
-    "url" : "http://github.com/ubuntudesign/vanilla-docs-theme/issues",
+    "url" : "http://github.com/vanilla-framework/vanilla-docs-theme/issues",
     "email": "webteam@canonical.com"
   },
   "license" : "LGPL-3.0",
@@ -38,7 +38,7 @@
   },
   "repository": {
   "type" : "git",
-  "url" : "https://github.com/ubuntudesign/vanilla-docs-theme"
+  "url" : "https://github.com/vanilla-framework/vanilla-docs-theme"
   },
   "devDependencies": {
     "gulp": "3.9",
