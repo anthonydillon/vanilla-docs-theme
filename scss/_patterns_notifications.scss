@@ -1,0 +1,7 @@
+@import 'vanilla-framework/scss/global_functions';
+@import 'vanilla-framework/scss/patterns_notifications';
+
+@mixin docs-p-notifications {
+  @include vf-p-notification;
+}
+
