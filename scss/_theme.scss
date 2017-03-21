@@ -23,6 +23,7 @@
 @import 'patterns_aside';
 @import 'patterns_layout';
 @import 'patterns_navigation';
+@import 'patterns_notifications';
 @import 'patterns_footer';
 @import 'patterns_grid';
 @import 'patterns_social-list';
@@ -54,6 +55,7 @@
   @include docs-p-footer;
   @include docs-p-grid;
   @include docs-p-navigation;
+  @include docs-p-notifications;
   @include docs-p-sidebar-nav;
   @include docs-p-social-list;
   @include docs-p-toc;
