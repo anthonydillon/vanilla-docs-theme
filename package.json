@@ -34,7 +34,10 @@
   },
   "license" : "LGPL-3.0",
   "scripts": {
-    "clean": "rm -r build; rm -r node_modules"
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "test": "gulp test",
+    "clean": "rm -r build"
   },
   "repository": {
   "type" : "git",
