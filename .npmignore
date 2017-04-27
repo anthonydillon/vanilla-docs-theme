@@ -1,0 +1,17 @@
+build/
+demo/
+CONTRIBUTING.md
+.docker-project
+docs/
+examples/
+Gemfile
+Gemfile.lock
+.git/
+.github/
+.gitignore
+node_modules/
+.sass-cache/
+.sass-lint.yml
+.travis.yml
+run
+yarn.lock
