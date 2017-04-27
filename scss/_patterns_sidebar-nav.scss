@@ -27,16 +27,16 @@
 
     &__link {
       border-bottom: 0;
-      color: $text-color;
+      color: $color-dark;
       font-weight: 300;
       margin-bottom: .5rem;
 
       &:visited {
-        color: $text-color;
+        color: $color-dark;
       }
 
       &:hover {
-        color: $link-color;
+        color: $color-link;
       }
 
       &:visited {

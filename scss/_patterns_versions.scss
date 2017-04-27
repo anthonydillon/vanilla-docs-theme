@@ -5,14 +5,14 @@
     padding: 0;
 
     &__link {
-      color: $text-color;
+      color: $color-dark;
 
       &:visited {
-        color: $text-color;
+        color: $color-dark;
       }
 
       &:hover {
-        color: $link-color;
+        color: $color-link;
       }
     }
 
