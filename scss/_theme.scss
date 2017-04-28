@@ -1,61 +1,26 @@
-// Settings
-@import 'settings';
-
-// Import Vanilla base styles
-@import 'vanilla-framework/scss/base_blockquotes';
-@import 'vanilla-framework/scss/base_box-sizing';
-@import 'vanilla-framework/scss/base_button';
-@import 'vanilla-framework/scss/base_code';
-@import 'vanilla-framework/scss/base_forms';
-@import 'vanilla-framework/scss/base_images';
-@import 'vanilla-framework/scss/base_links';
-@import 'vanilla-framework/scss/base_lists';
-@import 'vanilla-framework/scss/base_media';
-@import 'vanilla-framework/scss/base_reset';
-@import 'vanilla-framework/scss/base_tables';
-@import 'vanilla-framework/scss/base_typography';
+// Import Vanilla framework
+@import 'vanilla-framework/scss/build';
 
 // import theme patterns
-@import 'base_code';
-@import 'base_links';
 @import 'patterns_aside';
 @import 'patterns_breadcrumbs';
-@import 'patterns_aside';
-@import 'patterns_layout';
-@import 'patterns_navigation';
-@import 'patterns_notifications';
 @import 'patterns_footer';
 @import 'patterns_grid';
-@import 'patterns_social-list';
+@import 'patterns_layout';
+@import 'patterns_navigation';
 @import 'patterns_sidebar-nav';
+@import 'patterns_social-list';
 @import 'patterns_toc';
 @import 'patterns_versions';
 
 @mixin vanilla-docs-theme {
-  // Vanilla base styles
-  @include vf-b-reset;
-  @include vf-b-blockquotes;
-  @include vf-b-box-sizing;
-  @include vf-b-button;
-  @include vf-b-forms;
-  @include vf-b-code;
-  @include vf-b-links;
-  @include vf-b-lists;
-  @include vf-b-media;
-  @include vf-b-tables;
-  @include vf-b-typography;
-
   // Theme patterns
-  @include docs-b-code;
-  @include docs-b-links;
   @include docs-p-aside;
   @include docs-p-breadcrumbs;
-  @include docs-p-aside;
-  @include docs-p-layout;
   @include docs-p-footer;
   @include docs-p-grid;
+  @include docs-p-layout;
   @include docs-p-navigation;
-  @include docs-p-notifications;
   @include docs-p-sidebar-nav;
   @include docs-p-social-list;
   @include docs-p-toc;

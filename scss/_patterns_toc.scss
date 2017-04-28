@@ -7,15 +7,15 @@
 
     &__link {
       border-bottom: 0;
-      color: $text-color;
+      color: $color-dark;
       margin-bottom: .5rem;
 
       &:visited {
-        color: $text-color;
+        color: $color-dark;
       }
 
       &:hover {
-        color: $link-color;
+        color: $color-link;
       }
     }
   }
