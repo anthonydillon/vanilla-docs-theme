@@ -29,10 +29,10 @@
     "APIs"
   ],
   "bugs": {
-    "url" : "http://github.com/vanilla-framework/vanilla-docs-theme/issues",
+    "url": "http://github.com/vanilla-framework/vanilla-docs-theme/issues",
     "email": "webteam@canonical.com"
   },
-  "license" : "LGPL-3.0",
+  "license": "LGPL-3.0",
   "scripts": {
     "build": "gulp build",
     "watch": "gulp watch",
@@ -40,8 +40,8 @@
     "clean": "rm -r build"
   },
   "repository": {
-  "type" : "git",
-  "url" : "https://github.com/vanilla-framework/vanilla-docs-theme"
+    "type": "git",
+    "url": "https://github.com/vanilla-framework/vanilla-docs-theme"
   },
   "devDependencies": {
     "gulp": "3.9",
@@ -55,6 +55,6 @@
     "gulp-util": "3.0.4"
   },
   "dependencies": {
-     "vanilla-framework": "1.2.0"
+    "vanilla-framework": "1.2.1"
   }
 }
