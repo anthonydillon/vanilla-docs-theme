@@ -1,8 +1,15 @@
 *.DS_Store
 .sass-cache/
-node_modules/
 npm-debug.log
 css/
 build/
+node_modules/
+.publish
+.packages-volume-name
+demo.html
+/.firebaserc
+/firebase.json
+/Gemfile.lock
+/_jekyll/_site/
 .docker-project
 yarn-error.log

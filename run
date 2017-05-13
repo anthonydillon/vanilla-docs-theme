@@ -140,4 +140,3 @@ case $run_command in
   "yarn") docker_yarn $@ ;;
   *) invalid ;;
 esac
-

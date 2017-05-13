@@ -1,70 +1,30 @@
-var gulp = require('gulp'),
-    rename = require('gulp-rename'),
-    sass = require('gulp-sass'),
-    autoprefixer = require('gulp-autoprefixer'),
-    notify = require('gulp-notify'),
-    gutil = require('gulp-util'),
-    sassLint = require('gulp-sass-lint'),
-    minifycss = require('gulp-minify-css'),
-    util = require('util');
+'use strict'
 
-/* Helper functions */
-function throwSassError(sassError) {
-    throw new gutil.PluginError({
-        plugin: 'sass',
-        message: util.format(
-            "Sass error: '%s' on line %s of %s",
-            sassError.message,
-            sassError.line,
-            sassError.file
-        )
-    });
-}
+require('es6-promise').polyfill();
 
-/* Gulp instructions start here */
+var gulp = require('gulp');
+var wrench = require('wrench');
+
+/*
+  concatenate all *.js / *.coffee files in the 'gulp' folder
+ */
+wrench.readdirSyncRecursive('./gulp').filter(function(file) {
+  return (/\.(js|coffee)$/i).test(file);
+}).map(function(file) {
+  require('./gulp/' + file);
+});
+
+/* Gulp help instructions triggered as Gulp default task */
 gulp.task('help', function() {
-    console.log('sass - Generate the min and unminified css from sass');
-    console.log('build - Generate css and docs');
-    console.log('watch - Watch sass files and generate unminified css');
-    console.log('test - Lints Sass');
+  console.log('develop - Watch sass files and generate unminified CSS for development');
+  console.log('jekyll  - Run gulp develop with Jekyll instance to demo examples');
+  console.log('test  - Lint Sass');
+  console.log('build  - Lint Sass files and generate minified CSS for production');
 });
 
-gulp.task('sasslint', function() {
-    return gulp.src('scss/**/*.s+(a|c)ss')
-      .pipe(sassLint())
-      .pipe(sassLint.format())
-      .pipe(sassLint.failOnError())
-});
-
-var sassImportPaths = ['node_modules'];
-
-gulp.task('sass', function() {
-    return gulp.src('scss/**/*.scss')
-        .pipe(sass({
-            style: 'expanded',
-            onError: throwSassError,
-            includePaths: sassImportPaths
-        }))
-        .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
-        .pipe(gulp.dest('build/css/'))
-        .pipe(rename({suffix: '.min'}))
-        .pipe(minifycss())
-        .pipe(gulp.dest('build/css/'));
-});
-
-gulp.task('build', ['sasslint', 'sass']);
-
-gulp.task('sass-lite', function() {
-    return gulp.src('scss/build.scss')
-        .pipe(sass({ style: 'expanded', errLogToConsole: true, includePaths: sassImportPaths }))
-        .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
-        .pipe(gulp.dest('build/css/'));
-});
-
-gulp.task('watch', function() {
-    gulp.watch('scss/**/*.scss', ['sass-lite']);
-});
-
-gulp.task('test', ['sasslint']);
-
+/* Gulp default task list */
 gulp.task('default', ['help']);
+gulp.task('develop', ['watch', 'sass:develop']);
+gulp.task('jekyll', ['watch', 'sass:develop', 'jekyll:serve']);
+gulp.task('test', ['lint:sass', 'lint:spellcheck']);
+gulp.task('build', ['lint:sass', 'sass:build']);
