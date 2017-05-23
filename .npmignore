@@ -1,7 +1,6 @@
 build/
-demo/
+_config.yml
 CONTRIBUTING.md
-.docker-project
 docs/
 examples/
 Gemfile
@@ -9,9 +8,13 @@ Gemfile.lock
 .git/
 .github/
 .gitignore
+gulp/
+gulpfile.js
+index.html
+jekyll/
+_jekyll/
 node_modules/
 .sass-cache/
 .sass-lint.yml
+.spelling
 .travis.yml
-run
-yarn.lock
