@@ -7,6 +7,7 @@ files:
     - 'scss/_base_reset.scss'
     - 'scss/grid/**/*'
     - 'scss/_layout_grid.scss'
+    - 'scss/deprecate/**/*'
 rules:
   # Documentation: https://github.com/sasstools/sass-lint/tree/master/docs/rules
 
@@ -72,7 +73,7 @@ rules:
   leading-zero: 2
   nesting-depth: 2
   pseudo-element: 2
-  quotes: 2
+  quotes: 0
   url-quotes: 2
   zero-unit: 2
 
