@@ -34,6 +34,7 @@ gulp.task('sass:develop', function() {
 gulp.task('sass:build', function() {
   return gulp.src(sassPath)
     .pipe(sass({
+      includePaths: ['node_modules'],
       style: 'compressed',
       errLogToConsole: true,
       omitSourceMapUrl: true,
