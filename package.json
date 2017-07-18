@@ -61,7 +61,7 @@
   },
   "scripts": {
     "help": "gulp help",
-    "develop": "gulp develop",
+    "watch": "gulp develop",
     "start": "gulp jekyll",
     "test": "gulp test",
     "build": "gulp build",
