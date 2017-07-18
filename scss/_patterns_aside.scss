@@ -9,8 +9,8 @@
     @media (min-width: $breakpoint-medium) {
       border-left: 1px solid $color-mid-light;
       border-top: 0;
-      margin-top: 6rem;
-      padding: 0 2rem;
+      margin-top: 2rem;
+      padding: 0 1rem;
     }
 
     &__header {
@@ -21,7 +21,7 @@
     }
 
     &__section {
-      padding: 1.5rem 0;
+      padding: 1rem 0;
 
       &:not(:last-child) {
         border-bottom: 1px dotted $color-mid-light;
