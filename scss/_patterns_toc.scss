@@ -10,12 +10,14 @@
 
       &--separate {
         border-top: 1px solid $color-mid-light;
-        margin-top: 1rem;
+        margin: {
+          bottom: 0;
+          top: 1rem;
+        }
         padding: 1rem 0;
       }
 
       &--separate + &--separate {
-        margin-bottom: 0;
         margin-top: 0;
       }
 
