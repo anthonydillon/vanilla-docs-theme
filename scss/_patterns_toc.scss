@@ -5,10 +5,35 @@
     margin: 0;
     padding: 0;
 
+    &__item {
+      margin-bottom: .5rem;
+
+      &--separate {
+        border-top: 1px solid $color-mid-light;
+        margin: {
+          bottom: 0;
+          top: 1rem;
+        }
+        padding: 1rem 0;
+      }
+
+      &--separate + &--separate {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+
     &__link {
       border-bottom: 0;
       color: $color-dark;
-      margin-bottom: .5rem;
+
+      &.is-active {
+        font-weight: normal;
+      }
 
       &:visited {
         color: $color-dark;
