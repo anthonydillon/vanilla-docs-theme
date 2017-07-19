@@ -2,7 +2,7 @@
 title: Home
 ---
 
-## The documnetation theme for Vanilla Framework
+## The documentation theme for Vanilla Framework
 
 [![Build Status](https://travis-ci.org/vanilla-framework/vanilla-docs-theme.svg?branch=master)](https://travis-ci.org/vanilla-framework/vanilla-docs-theme)
 [![npm version](https://badge.fury.io/js/vanilla-docs-theme.svg)](http://badge.fury.io/js/vanilla-docs-theme)
