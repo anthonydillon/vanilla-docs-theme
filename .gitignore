@@ -33,6 +33,7 @@ vendor/
 # [build] Built files
 /build/
 _site/
+_jekyll/
 *.*.map
 
 # [env] Local environment settings

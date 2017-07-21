@@ -1,0 +1,7 @@
+@mixin docs-u-image-frame {
+  .u-image-frame {
+    border: 1px solid $color-mid-light;
+    max-width: 100%;
+    padding: 2px;
+  }
+}
