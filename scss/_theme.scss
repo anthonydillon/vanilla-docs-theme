@@ -6,6 +6,7 @@
 @import 'patterns_breadcrumbs';
 @import 'patterns_footer';
 @import 'patterns_grid';
+@import 'patterns_image';
 @import 'patterns_layout';
 @import 'patterns_navigation';
 @import 'patterns_sidebar-nav';
@@ -13,21 +14,17 @@
 @import 'patterns_toc';
 @import 'patterns_versions';
 
-// import theme utilities
-@import 'utilities_image-frame';
-
 @mixin vanilla-docs-theme {
   // Theme patterns
   @include docs-p-aside;
   @include docs-p-breadcrumbs;
   @include docs-p-footer;
   @include docs-p-grid;
+  @include docs-p-image;
   @include docs-p-layout;
   @include docs-p-navigation;
   @include docs-p-sidebar-nav;
   @include docs-p-social-list;
   @include docs-p-toc;
   @include docs-p-versions;
-  // Theme utilities
-  @include docs-u-image-frame;
 }
