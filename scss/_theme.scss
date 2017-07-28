@@ -6,6 +6,7 @@
 @import 'patterns_breadcrumbs';
 @import 'patterns_footer';
 @import 'patterns_grid';
+@import 'patterns_image';
 @import 'patterns_layout';
 @import 'patterns_navigation';
 @import 'patterns_sidebar-nav';
@@ -19,6 +20,7 @@
   @include docs-p-breadcrumbs;
   @include docs-p-footer;
   @include docs-p-grid;
+  @include docs-p-image;
   @include docs-p-layout;
   @include docs-p-navigation;
   @include docs-p-sidebar-nav;

@@ -1,0 +1,9 @@
+@mixin docs-p-image {
+  img {
+    &.is-bordered {
+      border: 1px solid $color-mid-light;
+      max-width: 100%;
+      padding: 2px;
+    }
+  }
+}
