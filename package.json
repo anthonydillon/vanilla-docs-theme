@@ -44,7 +44,7 @@
     "wrench": "^1.5.9"
   },
   "dependencies": {
-    "vanilla-framework": "1.2.x"
+    "vanilla-framework": "1.4.x"
   },
   "scripts": {
     "build": "gulp build",
